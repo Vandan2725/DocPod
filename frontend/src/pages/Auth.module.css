@@ -1,0 +1,23 @@
+.page { min-height:100vh; display:flex; align-items:center; justify-content:center; background:var(--gray-50); padding:20px; }
+.card { width:100%; max-width:360px; background:white; border:1px solid var(--gray-100); border-radius:var(--radius); padding:32px; box-shadow:var(--shadow); }
+.logo { font-family:var(--fd); font-size:28px; text-align:center; margin-bottom:4px; }
+.tagline { font-size:12px; color:var(--gray-400); text-align:center; margin-bottom:24px; line-height:1.4; }
+.tabs { display:flex; border:1px solid var(--gray-200); border-radius:var(--radius-sm); overflow:hidden; margin-bottom:20px; }
+.tab { flex:1; padding:8px; text-align:center; font-size:13px; background:transparent; border:none; color:var(--gray-400); cursor:pointer; }
+.tab:hover { background:var(--gray-50); }
+.tabActive { background:var(--brand)!important; color:white!important; font-weight:500; }
+.serverErr { background:var(--danger-pale); border:1px solid #F09595; border-radius:var(--radius-sm); padding:10px 14px; font-size:12px; color:#A32D2D; margin-bottom:16px; }
+.form { display:flex; flex-direction:column; gap:14px; }
+.field { display:flex; flex-direction:column; gap:5px; }
+.label { font-size:12px; font-weight:500; color:var(--gray-600); }
+.input { padding:9px 12px; border:1px solid var(--gray-200); border-radius:var(--radius-sm); font-size:13px; background:white; color:var(--gray-900); transition:border-color .15s; }
+.input:hover { border-color:var(--gray-400); }
+.input:focus { outline:2px solid var(--brand-mid); outline-offset:1px; border-color:transparent; }
+.inputErr { border-color:var(--danger)!important; }
+.err { font-size:11px; color:var(--danger); }
+.submitBtn { padding:10px; background:var(--brand); color:white; border:none; border-radius:var(--radius-sm); font-size:14px; font-weight:500; cursor:pointer; margin-top:4px; }
+.submitBtn:hover:not(:disabled) { background:var(--brand-dim); }
+.submitBtn:disabled { opacity:.6; cursor:not-allowed; }
+.switchRow { text-align:center; font-size:12px; color:var(--gray-400); margin-top:16px; }
+.link { color:var(--brand); cursor:pointer; font-weight:500; }
+.link:hover { text-decoration:underline; }

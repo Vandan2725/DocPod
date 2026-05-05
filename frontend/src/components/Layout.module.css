@@ -1,0 +1,19 @@
+.shell { display:flex; height:100vh; overflow:hidden; background:var(--gray-50); }
+.sidebar { width:210px; flex-shrink:0; background:white; border-right:1px solid var(--gray-100); display:flex; flex-direction:column; }
+.logo { padding:20px 18px 16px; border-bottom:1px solid var(--gray-100); }
+.logoText { font-family:var(--fd); font-size:20px; }
+.logoSub { font-size:10px; color:var(--gray-400); text-transform:uppercase; letter-spacing:.1em; margin-top:3px; }
+.nav { padding:10px 8px; flex:1; display:flex; flex-direction:column; gap:2px; }
+.navItem { display:flex; align-items:center; gap:9px; padding:8px 10px; border-radius:var(--radius-sm); font-size:13px; color:var(--gray-600); text-decoration:none; transition:background .12s,color .12s; }
+.navItem:hover { background:var(--gray-50); color:var(--gray-900); }
+.navItem.active { background:var(--brand-pale); color:var(--brand-dim); font-weight:500; }
+.navIcon { width:16px; text-align:center; font-size:13px; }
+.footer { padding:10px 8px 14px; border-top:1px solid var(--gray-100); }
+.userRow { display:flex; align-items:center; gap:9px; padding:8px 10px; }
+.avatar { width:32px; height:32px; border-radius:50%; background:var(--brand-light); color:var(--brand-dim); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:600; flex-shrink:0; }
+.userInfo { min-width:0; }
+.userName { font-size:12px; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.userEmail { font-size:10px; color:var(--gray-400); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.logoutBtn { background:none; border:none; font-size:11px; color:var(--gray-400); padding:4px 10px; cursor:pointer; width:100%; text-align:left; }
+.logoutBtn:hover { color:var(--danger); }
+.main { flex:1; display:flex; flex-direction:column; overflow:hidden; }

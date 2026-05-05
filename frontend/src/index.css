@@ -1,0 +1,22 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --brand:#1D9E75; --brand-dim:#0F6E56; --brand-mid:#5DCAA5; --brand-pale:#E1F5EE; --brand-light:#9FE1CB;
+  --danger:#E24B4A; --danger-pale:#FCEBEB;
+  --warn:#EF9F27; --info:#378ADD; --info-pale:#E6F1FB;
+  --gray-50:#F8F8F7; --gray-100:#EFEFED; --gray-200:#DDDDD9; --gray-400:#9A9A94; --gray-600:#5F5E5A; --gray-900:#1C1C1A;
+  --radius:12px; --radius-sm:8px;
+  --shadow:0 1px 3px rgba(0,0,0,.08); --shadow-md:0 4px 16px rgba(0,0,0,.12);
+  --ff:'Outfit',sans-serif; --fd:'DM Serif Display',serif; --fm:'DM Mono',monospace;
+}
+body { font-family:var(--ff); font-size:14px; color:var(--gray-900); background:var(--gray-50); line-height:1.5; }
+button { font-family:var(--ff); cursor:pointer; }
+input,select,textarea { font-family:var(--ff); }
+input:focus,select:focus { outline:2px solid var(--brand-mid); outline-offset:1px; }
+::-webkit-scrollbar { width:5px; }
+::-webkit-scrollbar-thumb { background:var(--gray-200); border-radius:3px; }
+@keyframes spin    { to { transform:rotate(360deg); } }
+@keyframes pulse   { 0%,100%{opacity:1} 50%{opacity:.4} }
+@keyframes fadeIn  { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:none} }
+.animate-spin  { animation:spin 1s linear infinite; }
+.animate-pulse { animation:pulse 1.5s ease-in-out infinite; }
+.animate-fade  { animation:fadeIn .3s ease forwards; }

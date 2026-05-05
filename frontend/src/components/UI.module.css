@@ -1,0 +1,46 @@
+.btn { display:inline-flex;align-items:center;gap:6px;border-radius:var(--radius-sm);font-family:var(--ff);font-weight:500;cursor:pointer;transition:all .15s;border:1px solid transparent;white-space:nowrap; }
+.btn:disabled { opacity:.5;cursor:not-allowed; }
+.btn-default { background:white;border-color:var(--gray-200);color:var(--gray-600); }
+.btn-default:hover:not(:disabled) { background:var(--gray-50);border-color:var(--gray-400); }
+.btn-primary { background:var(--brand);color:white;border-color:var(--brand); }
+.btn-primary:hover:not(:disabled) { background:var(--brand-dim); }
+.btn-danger { background:var(--danger-pale);color:var(--danger);border-color:#F09595; }
+.btn-danger:hover:not(:disabled) { background:#f7d0d0; }
+.btn-ghost { background:transparent;border-color:transparent;color:var(--gray-600); }
+.btn-ghost:hover:not(:disabled) { background:var(--gray-100); }
+.btn-sm { padding:5px 12px;font-size:12px; }
+.btn-md { padding:8px 16px;font-size:13px; }
+.btn-lg { padding:11px 22px;font-size:15px; }
+.spinner { font-size:14px; }
+.field { display:flex;flex-direction:column;gap:5px; }
+.label { font-size:12px;font-weight:500;color:var(--gray-600); }
+.input { padding:9px 12px;border:1px solid var(--gray-200);border-radius:var(--radius-sm);font-size:13px;background:white;color:var(--gray-900);transition:border-color .15s; }
+.input:hover { border-color:var(--gray-400); }
+.inputError { border-color:var(--danger)!important; }
+.fieldError { font-size:11px;color:var(--danger); }
+.card { background:white;border:1px solid var(--gray-100);border-radius:var(--radius);padding:20px; }
+.cardHover { cursor:pointer;transition:border-color .15s,transform .1s; }
+.cardHover:hover { border-color:var(--gray-200);transform:translateY(-1px); }
+.statusBadge { display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:500; }
+.statusDot { width:6px;height:6px;border-radius:50%;flex-shrink:0; }
+.status-green { background:var(--brand-pale);color:var(--brand-dim); } .status-green .statusDot { background:var(--brand); }
+.status-amber { background:#FAEEDA;color:#854F0B; } .status-amber .statusDot { background:var(--warn); }
+.status-blue  { background:var(--info-pale);color:#185FA5; } .status-blue .statusDot { background:var(--info); }
+.status-gray  { background:var(--gray-100);color:var(--gray-600); } .status-gray .statusDot { background:var(--gray-400); }
+.status-red   { background:var(--danger-pale);color:#A32D2D; } .status-red .statusDot { background:var(--danger); }
+.progressWrap { height:5px;background:var(--gray-100);border-radius:3px;overflow:hidden; }
+.progressFill { height:100%;border-radius:3px;transition:width .4s ease; }
+.fill-brand { background:var(--brand); } .fill-amber { background:var(--warn); } .fill-blue { background:var(--info); }
+.spinnerIcon { border-radius:50%;border:2px solid var(--gray-200);border-top-color:var(--brand);display:inline-block; }
+.toastContainer { position:fixed;bottom:24px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;gap:8px;z-index:9999;pointer-events:none; }
+.toast { padding:10px 20px;border-radius:20px;font-size:13px;font-weight:500;white-space:nowrap;box-shadow:var(--shadow-md); }
+.toast-info    { background:#1C1C1A;color:white; }
+.toast-success { background:var(--brand);color:white; }
+.toast-error   { background:var(--danger);color:white; }
+.overlay { position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;z-index:1000;padding:20px; }
+.modal { background:white;border-radius:var(--radius);width:100%;max-width:520px;box-shadow:var(--shadow-md);overflow:hidden; }
+.modalHeader { display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--gray-100); }
+.modalTitle { font-family:var(--fd);font-size:17px; }
+.modalClose { background:transparent;border:none;color:var(--gray-400);font-size:16px;padding:4px 8px;border-radius:var(--radius-sm);cursor:pointer; }
+.modalClose:hover { background:var(--gray-100);color:var(--gray-900); }
+.modalBody { padding:20px; }

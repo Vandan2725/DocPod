@@ -1,0 +1,21 @@
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+sqlalchemy==2.0.36
+python-multipart==0.0.12
+pydantic==2.10.3
+pydantic-core==2.27.1
+
+# Auth — bcrypt directly (no passlib wrapper) for stable behavior
+bcrypt==4.2.1
+python-jose[cryptography]==3.3.0
+
+# Document extraction
+pymupdf==1.24.14
+python-docx==1.1.2
+python-pptx==1.0.2
+
+# TTS
+gTTS==2.5.3
+
+# ffmpeg fallback
+imageio-ffmpeg==0.5.1

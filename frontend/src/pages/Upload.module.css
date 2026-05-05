@@ -1,0 +1,54 @@
+.page { display: flex; flex-direction: column; height: 100%; overflow: hidden; }
+.topbar { padding: 14px 24px; background: white; border-bottom: 1px solid var(--gray-100); flex-shrink: 0; }
+.title { font-family: var(--fd); font-size: 17px; }
+.content { flex: 1; overflow-y: auto; padding: 24px; display: flex; flex-direction: column; align-items: center; }
+
+.steps { display: flex; align-items: center; margin-bottom: 24px; }
+.stepRow { display: flex; align-items: center; }
+.step { display: flex; align-items: center; gap: 7px; font-size: 13px; color: var(--gray-400); }
+.step.active { color: var(--brand); font-weight: 500; }
+.step.done { color: var(--brand-dim); }
+.stepNum { width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid currentColor; display: flex; align-items: center; justify-content: center; font-size: 11px; flex-shrink: 0; }
+.step.done .stepNum { background: var(--brand); border-color: var(--brand); color: white; }
+.stepLine { width: 40px; height: 1px; background: var(--gray-200); margin: 0 10px; }
+.lineDone { background: var(--brand-mid); }
+
+.card { background: white; border: 1px solid var(--gray-100); border-radius: var(--radius); padding: 28px; width: 100%; max-width: 540px; }
+.cardTitle { font-family: var(--fd); font-size: 20px; margin-bottom: 4px; }
+.cardSub { font-size: 13px; color: var(--gray-400); margin-bottom: 22px; }
+
+.dropzone { border: 1.5px dashed var(--brand-mid); border-radius: var(--radius); padding: 36px 24px; text-align: center; background: var(--brand-pale); cursor: pointer; transition: all .15s; min-height: 180px; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+.dropzone:hover, .dzOver { border-color: var(--brand); background: #c5e8d8; }
+.dzIcon { width: 44px; height: 44px; border-radius: 50%; background: var(--brand-light); color: var(--brand-dim); display: flex; align-items: center; justify-content: center; font-size: 20px; margin: 0 auto 12px; }
+.dzTitle { font-size: 14px; font-weight: 500; color: var(--brand-dim); margin-bottom: 4px; }
+.dzSub { font-size: 12px; color: var(--brand-dim); opacity: .7; }
+.dzFormats { display: flex; gap: 6px; justify-content: center; margin-top: 12px; }
+.fmt { font-size: 10px; font-family: var(--fm); background: rgba(255,255,255,.65); border: 1px solid var(--brand-mid); color: var(--brand-dim); padding: 2px 8px; border-radius: 4px; }
+.uploadProgress { width: 100%; }
+.uploadFileName { font-size: 13px; color: var(--brand-dim); font-weight: 500; margin-bottom: 10px; }
+.uploadPct { font-size: 12px; color: var(--brand-dim); text-align: right; margin-top: 4px; }
+
+.sectionLabel { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--gray-400); font-weight: 500; margin-bottom: 10px; }
+.voiceGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.voiceOpt { padding: 12px 14px; border: 1px solid var(--gray-200); border-radius: var(--radius-sm); cursor: pointer; transition: all .12s; }
+.voiceOpt:hover { border-color: var(--brand-mid); background: var(--brand-pale); }
+.voiceSel { border-color: var(--brand-mid) !important; background: var(--brand-pale); }
+.voiceName { font-size: 13px; font-weight: 500; }
+.voiceDesc { font-size: 11px; color: var(--gray-400); margin-top: 2px; }
+.voiceSel .voiceName { color: var(--brand-dim); }
+
+.speedRow { display: flex; align-items: center; gap: 12px; }
+.speedSlider { flex: 1; }
+.speedVal { font-family: var(--fm); font-size: 13px; font-weight: 500; min-width: 42px; text-align: right; }
+.speedLabels { display: flex; justify-content: space-between; font-size: 10px; color: var(--gray-400); margin-top: 2px; }
+
+.configActions { display: flex; justify-content: space-between; margin-top: 24px; }
+
+.stages { display: flex; flex-direction: column; gap: 8px; margin: 16px 0; }
+.stage { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid var(--gray-100); font-size: 13px; transition: all .3s; }
+.stageWait { color: var(--gray-400); background: var(--gray-50); }
+.stageActive { border-color: var(--brand-mid); background: var(--brand-pale); color: var(--brand-dim); font-weight: 500; }
+.stageDone { border-color: #9FE1CB; background: #f0fbf6; color: var(--brand-dim); }
+.stageIcon { font-size: 15px; width: 18px; text-align: center; flex-shrink: 0; }
+.stageTick { margin-left: auto; font-size: 11px; color: var(--brand); font-weight: 500; }
+.genNote { font-size: 12px; color: var(--gray-400); margin-top: 14px; font-style: italic; }
